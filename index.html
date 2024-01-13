@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <!-- Розмітка перемикача теми -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Іконка сонця">
+          <use href="./images/sprite.svg#sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Перемикаж між темню та світлою темою"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Іконка місяця">
+          <use href="./images/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- В цей список рендери розмітку меню -->
+    <ul class="menu js-menu">
+      <li class="menu">
+        <div class="card">
+          <img
+            src="https://s1.eda.ru/StaticContent/Photos/140812180013/140820212258/p_O.jpg"
+            alt="Картопля, запечена в мундирі"
+            class="card__image"
+          />
+          <div class="card__content">
+            <h2 class="card__name">Картопля, запечена в мундирі</h2>
+            <p class="card__price">
+              <i class="material-icons"> monetization_on </i>
+              100 кредитів
+            </p>
+
+            <p class="card__descr">
+              Ароматна, ситна, шипляча домашня картопля, фарширована
+              сметанно-беконною начинкою, - це дуже простий і дуже ефектний
+              спосіб нагодувати велику кількість людей, практично не витративши
+              на підготовку ні сил, ні часу. Звичайну картоплю при бажанні тут
+              можна замінити на солодкий батат, а в начинку додати, наприклад,
+              кукурудзу або солодкий червоний перець.
+            </p>
+
+            <ul class="tag-list">
+              <li class="tag-list__item">Картопля</li>
+              <li class="tag-list__item">Часник</li>
+              <li class="tag-list__item">Сметана</li>
+              <li class="tag-list__item">Бекон</li>
+              <li class="tag-list__item">Твердий сир</li>
+              <li class="tag-list__item">Зелена цибуля</li>
+            </ul>
+          </div>
+
+          <button class="card__button button">
+            <i class="material-icons button__icon"> shopping_cart </i>
+            В корзину
+          </button>
+        </div>
+      </li>
+      <li class="menu">
+        <div class="card">
+          <img
+            src="https://img.tsn.ua/cached/581/tsn-671b840e81dae5015bc4c6345e63d1d0/thumbs/1036x648/eb/81/ea40a4a7a6e286cfe589c195af0a81eb.jpeg"
+            alt="Томатний магрибський суп"
+            class="card__image"
+          />
+          <div class="card__content">
+            <h2 class="card__name">Томатний магрибський суп</h2>
+            <p class="card__price">
+              <i class="material-icons"> monetization_on </i>
+              150 кредитів
+            </p>
+
+            <p class="card__descr">
+              Томатний магрибський суп особливо розповсюджений в Марокко та
+              Тунісі. Він досить простий в приготуванні і сам по собі легкий — в
+              основі томати та курячий бульйон. Окрім них в супі необхідні лише
+              спеції, мед та лимон, які всі разом і передають той самий східний
+              колорит. Смак супу повністью залежить від якості томатів.
+              Доповнять страву свіжа кінза та окремі дольки лимону.
+            </p>
+
+            <ul class="tag-list">
+              <li class="tag-list__item">Помідори</li>
+              <li class="tag-list__item">Курячий бульйон</li>
+              <li class="tag-list__item">Мед</li>
+              <li class="tag-list__item">Петрушка</li>
+              <li class="tag-list__item">Кінза</li>
+              <li class="tag-list__item">Паприка</li>
+            </ul>
+          </div>
+
+          <button class="card__button button">
+            <i class="material-icons button__icon"> shopping_cart </i>
+            В корзину
+          </button>
+        </div>
+      </li>
+      <li class="menu">
+        <div class="card">
+          <img
+            src="https://s1.eda.ru/StaticContent/Photos/121114213720/151024152626/p_O.png"
+            alt="Крем-суп з гарбуза"
+            class="card__image"
+          />
+          <div class="card__content">
+            <h2 class="card__name">Крем-суп з гарбуза</h2>
+            <p class="card__price">
+              <i class="material-icons"> monetization_on </i>
+              100 кредитів
+            </p>
+
+            <p class="card__descr">
+              Портрет цієї оранжевої юшки прикрашає обгортку книги «La Cuisine
+              du Marché» Поля Бокюза. Бокюз, який придумав так звану нову кухню,
+              вважав гарбуза одним із основ цього світогляу, а гарбузовий суп —
+              найкращим витвором гастрономії.
+            </p>
+
+            <ul class="tag-list">
+              <li class="tag-list__item">Гарбуз</li>
+              <li class="tag-list__item">Петрушка</li>
+              <li class="tag-list__item">Вершки</li>
+              <li class="tag-list__item">Бренді</li>
+              <li class="tag-list__item">Курячий бульйон</li>
+            </ul>
+          </div>
+
+          <button class="card__button button">
+            <i class="material-icons button__icon"> shopping_cart </i>
+            В корзину
+          </button>
+        </div>
+      </li>
+    </ul>
+    <script type="module" src="menu.json"></script>
+    <script type="module" src="swichtheme.js"></script>
+  </body>
+</html>
